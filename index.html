@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CozyStyle - Pijamas, yetis oversized y prendas cómodas con estilo.">
+  <title>CozyStyle | Comodidad que se siente</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#inicio">CozyStyle <span>♡</span></a>
+    <nav class="nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#pijamas">Pijamas</a>
+      <a href="#yetis">Yetis</a>
+      <a href="#nuevos">Nuevos estilos</a>
+      <a href="#ofertas">Ofertas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" aria-label="Buscar" id="searchBtn">⌕</button>
+      <button class="icon-btn" aria-label="Favoritos" id="favoritesBtn">♡</button>
+      <button class="cart-btn" aria-label="Abrir carrito" id="cartBtn">🛒 <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">Pijamas · Yetis · Nuevos estilos</p>
+        <h1>Comodidad que se siente.<br><em>Estilo que se nota.</em></h1>
+        <p>Prendas para dormir, descansar, abrigarte y disfrutar cada momento.</p>
+        <a class="primary-btn" href="#pijamas">Ver colección <span>→</span></a>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card hero-pajama">🌙<small>Pijamas</small></div>
+        <div class="hero-card hero-yeti">🧸<small>Yetis</small></div>
+      </div>
+    </section>
+
+    <section class="categories section">
+      <article class="category-card">
+        <div class="category-art pink">🌙</div>
+        <h3>Pijamas</h3>
+        <p>Dulces noches empiezan aquí.</p>
+        <a href="#pijamas">Ver pijamas →</a>
+      </article>
+      <article class="category-card">
+        <div class="category-art lilac">🧸</div>
+        <h3>Yetis</h3>
+        <p>Más grande. Más cómodo. Más tú.</p>
+        <a href="#yetis">Descubrir yetis →</a>
+      </article>
+      <article class="category-card">
+        <div class="category-art peach">✨</div>
+        <h3>Nuevos estilos</h3>
+        <p>Tu estilo, tus reglas.</p>
+        <a href="#nuevos">Explorar →</a>
+      </article>
+      <article class="category-card">
+        <div class="category-art blue">❄️</div>
+        <h3>Temporada</h3>
+        <p>Para esos días de frío.</p>
+        <a href="#ofertas">Abrígate →</a>
+      </article>
+    </section>
+
+    <section class="benefits">
+      <div>🚚 <strong>Envíos a todo Colombia</strong><span>Rápidos y seguros</span></div>
+      <div>⏱️ <strong>Tiempos claros</strong><span>Consulta según tu ciudad</span></div>
+      <div>♡ <strong>Favoritos</strong><span>Guarda lo que te gusta</span></div>
+      <div>☺ <strong>Atención personalizada</strong><span>Estamos para ayudarte</span></div>
+    </section>
+
+    <section class="product-section section" id="pijamas">
+      <div class="section-heading">
+        <div><p class="eyebrow">Para dormir bonito</p><h2>Pijamas</h2></div>
+        <span>Los favoritos para noches cómodas.</span>
+      </div>
+      <div class="product-grid" id="pajamaGrid"></div>
+    </section>
+
+    <section class="product-section section alt" id="yetis">
+      <div class="section-heading">
+        <div><p class="eyebrow">Abrígate sin perder el estilo</p><h2>Yetis</h2></div>
+        <span>Oversized, suaves y calientitos.</span>
+      </div>
+      <div class="product-grid" id="yetiGrid"></div>
+    </section>
+
+    <section class="product-section section" id="nuevos">
+      <div class="section-heading">
+        <div><p class="eyebrow">Acaban de llegar</p><h2>Nuevos estilos</h2></div>
+        <span>Descubre algo diferente.</span>
+      </div>
+      <div class="product-grid" id="newGrid"></div>
+    </section>
+
+    <section class="best-sellers section">
+      <div class="section-heading centered">
+        <div><p class="eyebrow">🔥 Los favoritos</p><h2>Más vendidos</h2></div>
+        <span>Las prendas que más están eligiendo nuestros clientes.</span>
+      </div>
+      <div class="product-grid" id="bestGrid"></div>
+    </section>
+
+    <section class="shipping section" id="ofertas">
+      <div class="shipping-copy">
+        <p class="eyebrow">Compra con tranquilidad</p>
+        <h2>Tu pedido, de nuestra tienda hasta tu puerta. 📦</h2>
+        <p>Realizamos envíos a todo Colombia. Al momento de comprar podrás indicar tu ciudad y consultar el tiempo estimado de entrega.</p>
+      </div>
+      <div class="shipping-box">
+        <span>🚚</span>
+        <strong>Envíos a todo Colombia</strong>
+        <small>El tiempo puede variar según destino.</small>
+      </div>
+    </section>
+
+    <section class="contact section" id="contacto">
+      <div>
+        <p class="eyebrow">¿Necesitas ayuda?</p>
+        <h2>Estamos para ayudarte. 💌</h2>
+        <p>Pregúntanos por tallas, colores, disponibilidad, envíos o cualquier producto.</p>
+      </div>
+      <div class="contact-links">
+        <a href="#" onclick="return false">💬 WhatsApp</a>
+        <a href="#" onclick="return false">📷 Instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo">CozyStyle <span>♡</span></div>
+    <p>Comodidad que se siente. Estilo que se nota.</p>
+    <small>© 2026 CozyStyle</small>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Carrito">
+    <div class="drawer-head"><h2>Tu carrito 🛒</h2><button id="closeCart">×</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-summary">
+      <div><span>Subtotal</span><strong id="cartTotal">$0</strong></div>
+      <button class="primary-btn full" id="checkoutBtn">Continuar compra</button>
+    </div>
+  </aside>
+
+  <div class="modal" id="checkoutModal">
+    <div class="modal-card">
+      <button class="modal-close" id="closeCheckout">×</button>
+      <p class="eyebrow">Último paso</p>
+      <h2>Finalizar compra</h2>
+      <p>En una siguiente versión conectaremos este paso con el método de pago real. Por ahora, completa tus datos para simular el pedido.</p>
+      <form id="checkoutForm">
+        <label>Nombre<input required name="name" placeholder="Tu nombre"></label>
+        <label>Ciudad<input required name="city" placeholder="Bogotá, Medellín, Cali..."></label>
+        <label>Dirección<input required name="address" placeholder="Dirección de entrega"></label>
+        <label>Método de pago
+          <select required name="payment">
+            <option value="">Selecciona una opción</option>
+            <option>Nequi</option>
+            <option>Daviplata</option>
+            <option>Transferencia bancaria</option>
+            <option>Tarjeta débito/crédito</option>
+            <option>Pago contra entrega</option>
+          </select>
+        </label>
+        <button class="primary-btn full" type="submit">Confirmar pedido</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
